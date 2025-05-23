@@ -10,6 +10,7 @@ from src.cultural import ActividadCultural
 from src.academica_atr_adi import ActividadAcademica
 from src.estu import Estudiante
 
+
 def main():
     # Crear actividades
     futbol = ActividadDeportiva("Torneo de Fútbol", "2025-04-10", 2, "Fútbol")
