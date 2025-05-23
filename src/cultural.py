@@ -56,3 +56,8 @@ class ActividadCultural(Actividad):
                 f"🎨 Tipo de Evento: {self.tipo_evento}\n"
                 f"📍 Lugar: {self.lugar}\n"
                 f"👤 Organizador: {self.organizador}")
+
+# Prueba individual
+if __name__ == "__main__":
+    teatro = ActividadCultural("Obra de Teatro", "2025-03-15", 1.5, "Teatro", "Auditorio Central", "Club Cultural")
+    print(teatro.generar_reporte())

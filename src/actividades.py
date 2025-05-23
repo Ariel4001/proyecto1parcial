@@ -51,3 +51,4 @@ class Actividad(ABC):
         Método abstracto que debe ser implementado por las subclases.
         """
         pass
+

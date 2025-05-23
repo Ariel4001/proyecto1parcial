@@ -10,7 +10,7 @@ from src.actividades import Actividad
 class ActividadDeportiva(Actividad):
     """
     Subclase de Actividad que representa una actividad deportiva.
-    Añade el atributo 'disciplina' y sobrescribe el método generar_reporte().
+    Añade el atributo 'disciplina' y sobrescribe el método generar reporte().
     """
 
     def __init__(self, nombre, fecha, duracion, disciplina):
@@ -36,3 +36,7 @@ class ActividadDeportiva(Actividad):
                 f"⚽ Disciplina: {self.disciplina}")
 
 
+# Prueba individual
+if __name__ == "__main__":
+    futbol = ActividadDeportiva("Torneo de Fútbol", "2025-04-10", 2, "Fútbol")
+    print(futbol.generar_reporte())

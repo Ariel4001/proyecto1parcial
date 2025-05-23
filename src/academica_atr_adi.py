@@ -56,3 +56,8 @@ class ActividadAcademica(Actividad):
                 f"📖 Tema: {self.tema}\n"
                 f"👨‍🏫 Ponente: {self.ponente}\n"
                 f"💻 Modalidad: {self.modalidad}")
+
+# Prueba individual
+if __name__ == "__main__":
+    seminario = ActividadAcademica("Seminario de biologia", "2025-05-05", 3, "Inteligencia Artificial", "Dr.Olloa", "Virtual")
+    print(seminario.generar_reporte())

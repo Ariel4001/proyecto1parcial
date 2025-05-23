@@ -72,3 +72,14 @@ class Estudiante:
         print("\n" + "=" * 60)
         print("Gracias por tu participación".center(60))
         print("=" * 60)
+
+
+# Prueba individual
+if __name__ == "__main__":
+    from deportiva import ActividadDeportiva
+
+    futbol = ActividadDeportiva("Torneo de Fútbol", "2025-04-10", 2, "Fútbol")
+    estudiante = Estudiante("Carlos Pérez", "20231234", "Ingeniería en Sistemas")
+    estudiante.agregar_actividad(futbol)
+    estudiante.generar_certificado()
+

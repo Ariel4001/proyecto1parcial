@@ -14,7 +14,7 @@ def main():
     # Crear actividades
     futbol = ActividadDeportiva("Torneo de Fútbol", "2025-04-10", 2, "Fútbol")
     teatro = ActividadCultural("Obra de Teatro", "2025-03-15", 1.5, "Teatro", "Auditorio Central", "Club Cultural")
-    seminario = ActividadAcademica("Seminario de IA", "2025-05-05", 3, "Inteligencia Artificial", "Dra. Gómez", "Virtual")
+    seminario = ActividadAcademica("Seminario de biologia", "2025-05-05", 3, "Inteligencia Artificial", "Dra. Cervantes", "Virtual")
 
     # Crear estudiante
     estudiante = Estudiante("Carlos Pérez", "20231234", "Ingeniería en Sistemas")
