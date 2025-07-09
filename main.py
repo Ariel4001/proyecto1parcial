@@ -5,10 +5,10 @@
 # * CERVANTES MENENDEZ ALISSON DANIELA
 # * TRIVIÑO TORRES LAILA DANYELA
 
-from src.deportiva import ActividadDeportiva
-from src.cultural import ActividadCultural
-from src.academica_atr_adi import ActividadAcademica
-from src.estu import Estudiante
+from src.dominio.deportiva import ActividadDeportiva
+from src.dominio.cultural import ActividadCultural
+from src.dominio.academica_atr_adi import ActividadAcademica
+from src.dominio.estu import Estudiante
 
 
 def main():

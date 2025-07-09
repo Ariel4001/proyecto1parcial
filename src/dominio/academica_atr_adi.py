@@ -5,7 +5,7 @@
 # * CERVANTES MENENDEZ ALISSON DANIELA
 # * TRIVIÑO TORRES LAILA DANYELA
 
-from src.actividades import Actividad
+from src.dominio.actividades import Actividad
 
 class ActividadAcademica(Actividad):
     """
