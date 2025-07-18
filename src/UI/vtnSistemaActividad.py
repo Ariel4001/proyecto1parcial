@@ -28,7 +28,7 @@ class Ui_vtnSistemaActividad(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(160, 10, 351, 41))
+        self.label.setGeometry(QRect(140, 10, 351, 41))
         font = QFont()
         font.setPointSize(14)
         font.setBold(True)
