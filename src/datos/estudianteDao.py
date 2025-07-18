@@ -86,13 +86,13 @@ class EstudianteDao:
             return cls._ERROR
 
 
-if __name__ == "__main__":
-    est1= Estudiante("Jemina suarez", "0123456789", "13/05/2024",
-                   2.5 , "2222-2222", "GIG",
-                   "deportiva")
-    estudiante = EstudianteDao.insertar_persona(est1)
-    print("estudiante agregado correctamente")
-    print(estudiante)
+# if __name__ == "__main__":
+#     est1= Estudiante("Ariel Castro", "0123456789", "3035/05/01",
+#                    2.5 , "2222-2222", "GIG",
+#                    "deportiva")
+#     estudiante = EstudianteDao.insertar_persona(est1)
+#     print("estudiante agregado correctamente")
+#     print(estudiante)
 
 
 
