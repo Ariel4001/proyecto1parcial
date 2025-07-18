@@ -61,6 +61,7 @@ class Estudiante:
     def tipo_actividad(self, valor):
         self._tipo_actividad = valor
 
+
     @property
     def matricula(self):
         return self._matricula
