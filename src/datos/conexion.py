@@ -6,8 +6,6 @@ class Conexion:
     Clase que permite abrir conexion a la BBDD y abrir cursor.
     """
     _SERVIDOR = 'DESKTOP-HB9BQS3\\ARIELCASTRO'
-    # _SERVIDOR = '10.4.74.77'
-    # _SERVIDOR = '127.0.0.1'
     _BBDD = 'RegistroActividades'
     _USUARIO = 'SistemaActividadesEstudiantiles'
     _PASSWORD = '1234'
@@ -25,11 +23,10 @@ class Conexion:
                 cls._conexion = bd.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
                                            cls._SERVIDOR + ';DATABASE=' + cls._BBDD + ';UID=' + cls._USUARIO + ';PWD=' + cls._PASSWORD
                                            + ';TrustServerCertificate=yes')
-                # log.debug(f'Conexión exitosa: {cls._conexion}')
+                print(f'Conexión exitosa: {cls._conexion}') # Añadido para depuración
                 return cls._conexion
             except Exception as e:
-                # log.error(f'Ocurrió una excepción al obtener la conexión: {e}')
-                print(e)
+                print(f'Ocurrió una excepción al obtener la conexión: {e}') # Mensaje más claro
                 sys.exit()
         else:
             return cls._conexion
@@ -43,14 +40,14 @@ class Conexion:
         if cls._cursor is None:
             try:
                 cls._cursor = cls.obtenerConexion().cursor()
-                # log.debug(f'Se abrió correctamente el cursor: {cls._cursor}')
+                print(f'Se abrió correctamente el cursor: {cls._cursor}') # Añadido para depuración
                 return cls._cursor
             except Exception as e:
-                # log.error(f'Ocurrió una excepción al obtener el cursor: {e}')
-                print(e)
+                print(f'Ocurrió una excepción al obtener el cursor: {e}') # Mensaje más claro
                 sys.exit()
         else:
             return cls._cursor
+
 
 if __name__ == '__main__':
     print(Conexion.obtenerConexion())

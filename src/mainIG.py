@@ -2,9 +2,9 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from src.UI.controlador import MainWindowController
+from src.servicio.estudiantes import MyMainWindow
 
-app = QApplication([])
-vtnSistemaActividad = MainWindowController()
-vtnSistemaActividad.show()
+app = QApplication(sys.argv)
+vtn_Actividad = MyMainWindow()
+vtn_Actividad.show()
 sys.exit(app.exec())
