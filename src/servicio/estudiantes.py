@@ -123,7 +123,7 @@ class MyMainWindow(QMainWindow):
         try:
             duracion = float(duracion_str)
         except ValueError:
-            QMessageBox.warning(self, "Error de Entrada", "La duración no es un número válido.")
+            QMessageBox.warning(self, "Error de Entrada", "Ingrese correctamente los datos, o no deje un campo vacio.")
             return
         matricula = self.ui.txtMatricula.text().strip()
         carrera = self.ui.txtCarrera.text().strip()
@@ -159,6 +159,9 @@ class MyMainWindow(QMainWindow):
 
     def eliminar(self):
         cedula = self.ui.txtCedula.text().strip()
+        if not cedula:
+            QMessageBox.warning(self, "Error", "No ha ingresado datos.")
+            return
         if QMessageBox.question(self, "Confirmación", "Desea borrar el registro.") == QMessageBox.Yes:
             retorno = EstudianteDao.eliminar_persona(cedula)
             if retorno != -1:
